@@ -1,12 +1,54 @@
+# Entornos virtuales
 .venv/
+venv/
+env/
+ENV/
+
+# Python cache
 __pycache__/
+*.py[cod]
+*$py.class
 *.pyc
 *.pyo
+
+# Distribución / instalación
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# env — NUNCA pushear estos archivos
 .env
 .env.*
 !.env.example
-*.egg-info/
-dist/
+
+# Secretos y certificados
+*.pem
+*.key
+*.p12
+secrets/
+
+# Testing & cobertura
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
+*.coveragerc
+
+# Scripts locales con credenciales hardcodeadas
+scripts/run_schema.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
