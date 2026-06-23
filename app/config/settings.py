@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     openai_api_key: str
     redis_url: str = "redis://localhost:6379"
     environment: str = "development"
-    openai_model: str = "gpt-4o-mini"
+    openai_model: str = "gpt-4.1-mini"
 
 
 settings = Settings()
